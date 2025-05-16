@@ -1,153 +1,80 @@
+<!-- Resume using html and css -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- For style i prefered internal css -->
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .chessBoard {
-            background-color: rgb(136, 59, 28);
-            display: grid;
-            border: 25px solid rgb(136, 59, 28);
-            grid-template-columns: repeat(8, 60px);
-            grid-template-rows: repeat(8, 60px);
-        }
-
-        .white {
-            background-color: rgb(255, 221, 159);
-            width: 60px;
-            height: 60px;
-            /* border: 2px solid white; */
-            border-radius: 15%;
-            box-sizing: border-box;
-        }
-
-        .black {
-            background-color: black;
-            width: 60px;
-            height: 60px;
-            /* border: 2px solid black; */
-            border-radius: 15%;
-            box-sizing: border-box;
-        }
-
-        .white:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 8px blue;
-        }
-
-        .black:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 8px blue;
-        }
-        .box{
-            background-color: rgb(136, 59, 28);
-            border: 20px solid rgb(20, 17, 17);
-        }
-        p{
-            text-align: center;
-            font-family: cambria;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 25px;
-        }
-    </style>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="box">
-        <p>Chess Board</p>
+    <div class="resume-container">
+        <header class="header">
+            <h1>Praveen Singh</h1>
+            <p>Web Developer | Graphic Designer</p>
+        </header>
 
-        <div class="chessBoard">
-            <!-- first row -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- second row -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <!-- third row -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- forth row -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <!-- five row -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- six row -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <!-- seven row -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- eight row -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Email:</strong> praveen6739@gmail.com</li>
+                <li><strong>Phone:</strong> 7470383318</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/praveen-singh</li>
+                <li><strong>github:</strong> praveen-singh07</li>
+            </ul>
+        </section>
 
-        </div>
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>A passionate web developer with 5+ years of experience creating user-friendly websites and applications. Skilled in front-end and back-end technologies, including HTML, CSS, JavaScript, and PHP.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Senior Web Developer | XYZ Corp.</h3>
+                <p class="job-duration">March 2020 - Present</p>
+                <ul>
+                    <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with design teams to create seamless user experiences.</li>
+                    <li>Implemented API integrations and improved website performance.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Web Developer | ABC Tech</h3>
+                <p class="job-duration">June 2017 - February 2020</p>
+                <ul>
+                    <li>Worked on developing web applications using front-end and back-end technologies.</li>
+                    <li>Maintained and optimized websites for speed and performance.</li>
+                    <li>Collaborated with cross-functional teams on projects.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <div class="degree">
+                <h3>Computer Science Bachelor’s Degree</h3>
+                <p>University of Tech - Graduated: 2017</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript & jQuery</li>
+                <li>PHP & MySQL</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+                <li>Adobe Photoshop & Illustrator</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Praveen Singh All rights reserved.</p><hr>
+        </footer>
     </div>
 </body>
-
 </html>
